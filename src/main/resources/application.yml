@@ -1,0 +1,15 @@
+spring:
+  #???????
+  datasource:
+    #???????
+    type: com.zaxxer.hikari.HikariDataSource
+    #????????????
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/mybatis_plus?characterEncoding=utf-8&userSSL=false
+    username: root
+    password: lyb123
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/haiyi/mybatisplus/mapper/*.xml
+
